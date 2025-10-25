@@ -1,0 +1,121 @@
+/* dashboard.css */
+
+/* Container for metrics cards */
+.metrics-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Individual metric card */
+.metric-card {
+  flex: 1;
+  min-width: 150px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.metric-card h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.metric-card p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+  margin-top: 8px;
+}
+
+/* Container for charts */
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual chart card */
+.chart-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.chart-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Reviews Table */
+.reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.reviews-table th,
+.reviews-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.reviews-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #333;
+}
+
+.reviews-table tr:hover {
+  background: #f9fafb;
+}
+
+/* Sentiment badge */
+.reviews-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Success toast */
+.success-toast {
+  background-color: #16a34a;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* Overview section wrapper */
+.overview-section {
+  background: #eef2ff; /* subtle light background */
+  padding: 30px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
